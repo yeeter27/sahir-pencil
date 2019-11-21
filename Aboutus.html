@@ -44,7 +44,7 @@
     <p>We lease pencils.
     <br>
     <br>
-    website made by ishaan, used bootstrap, and w3schools.
+    chief developer and head of long term thinking - ishaan koratkar
     <br>
     ceo - sahir pagey
     <br>
@@ -52,9 +52,23 @@
     <br>
     brand mascot - kitty ma
     <br>
-    ishaan's other stuff at <a href="https://ishaanblog.com">ishaanblog.com</a>
+    web developer - derek bang'o
     <br>
+    <br>
+    satasfied customer count: 
     </p>
     
+    <script>
+      var customerCount = 0;
+      function save() {
+                var keys = Object.keys(savedVariables);
+                for(var i = 0; i < customerCount; i++) {
+                    var key = keys[i];
+                    var value = savedVariables[key];
+                    if(value==null)continue;
+                    localStorage.setItem(key, value);
+                }
+                localStorage.setItem('customerCount',JSON.stringify(shopItemsAmount));
+    </script>
   </body>
 </html>
