@@ -63,7 +63,7 @@
     Web Developer - Derek Bang'O
     <br>
     <br>
-    <p id="customerCount">Satasfied Customers: 0</p>
+    <p id="customers"></p>
     </p>
     
     <script type="text/javascript"> 
@@ -76,7 +76,7 @@ setInterval(function() {
   update();            
 }, msForCustomer);
       function update() {
-        document.getElementById("customers").innerHTML = customers;
+        document.getElementById("customers").innerHTML = "satasfied customers" + customers;
       }
      funciton customerGetBigger(ammount) {
        customers+=ammount;
