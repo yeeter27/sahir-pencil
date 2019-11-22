@@ -66,16 +66,18 @@
     <p id="customerCount">Satasfied Customers: 0</p>
     </p>
     
-    <script type="text/javascript">
-      var customerCount = 2;
-                var keys = Object.keys(savedVariables);
-                for(var i = 0; i < customerCount; customerCount++) {
-                 customerCount++;
-                  var key = keys[i];
-                    var value = savedVariables[key];
-                    if(value==null)continue;
-                    localStorage.setItem(key, value);
-                localStorage.setItem('customerCount',JSON.stringify(shopItemsAmount));
+    <script type="text/javascript"> 
+      var customers = 0;
+      var msForCustomer = 1000;
+setInterval(function() {            	
+  for(var i = 0; i < customers; i++) {            		
+    customers++;       	
+  }            
+  update();            
+}, msForCustomer);
+      function update() {
+        document.getElementById("customers").innerHTML = customers;
+      }
     </script>
   </body>
 </html>
