@@ -68,7 +68,6 @@
     
     <script type="text/javascript">
       var customerCount = 2;
-      function save() {
                 var keys = Object.keys(savedVariables);
                 for(var i = 0; i < customerCount; customerCount++) {
                  customerCount++;
@@ -76,7 +75,6 @@
                     var value = savedVariables[key];
                     if(value==null)continue;
                     localStorage.setItem(key, value);
-                }
                 localStorage.setItem('customerCount',JSON.stringify(shopItemsAmount));
     </script>
   </body>
