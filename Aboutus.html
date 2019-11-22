@@ -71,13 +71,16 @@
       var msForCustomer = 1000;
 setInterval(function() {            	
   for(var i = 0; i < customers; i++) {            		
-    customers++;       	
+      customerGetBigger(customersBig);
   }            
   update();            
 }, msForCustomer);
       function update() {
         document.getElementById("customers").innerHTML = customers;
       }
+     funciton customerGetBigger(ammount) {
+       customers+=ammount;
+     }
     </script>
   </body>
 </html>
