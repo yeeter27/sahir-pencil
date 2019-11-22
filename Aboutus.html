@@ -65,23 +65,23 @@
     Web Developer - Derek Bang'O
     <br>
     <br>
-    <p id="customers">Satasfied Customers</p>
+    <span id="customers">Satasfied Customers</span>
     </p>
     
     <script type="text/javascript"> 
       document.getElementById("customers").innerHTML = "satasfied customers:" + customers;
-      var customers = 0;
+      var customers = 1;
       var msForCustomer = 1000;
 setInterval(function() {            	
   for(var i = 0; i < customers; i++) {            		
-      customerGetBigger(customersBig);
+      customerGetBigger(ammount);
   }            
   update();            
 }, msForCustomer);
       function update() {
         document.getElementById("customers").innerHTML = "satasfied customers" + customers;
       }
-     funciton customerGetBigger(ammount) {
+     funciton customerGetBigger(ammount = customers;) {
        customers+=ammount;
      }
     </script>
